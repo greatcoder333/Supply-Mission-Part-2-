@@ -62,19 +62,12 @@ function keyPressed() {
     // Look at the hints in the document and understand how to make the package body fall only on
 	Matter.Body.setStatic(packageBody,false)
   }
-if (keyCode === LEFT_ARROW){
+if (keyCode === LEFT_ARROW && packageBody.position.y <= 200){
 helicopterSprite.x = helicopterSprite.x -20
 translation = {x:-20 , y:0}
 Matter.Body.translate (packageBody,translation)
 }
-else if (keyCode === RIGHT_ARROW){
+else if (keyCode === RIGHT_ARROW && packageBody.position.y <= 200){
 helicopterSprite.x = helicopterSprite.y - 30
 Matter.Body.translate(packageBody,translation)
 }
-if (packageBody.pos.x = packageBody.pos.y){
-packageBody.velocity(0,0)
-}
-}
-
-
-
