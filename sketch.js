@@ -71,3 +71,4 @@ else if (keyCode === RIGHT_ARROW && packageBody.position.y <= 200){
 helicopterSprite.x = helicopterSprite.y - 30
 Matter.Body.translate(packageBody,translation)
 }
+}
